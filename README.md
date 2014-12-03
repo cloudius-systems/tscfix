@@ -20,9 +20,9 @@ How to use
  5. Run ```tscfix``` again to verify that the skew has been eliminated.  A few dozen cycles
     of skew is permissable.
  6. Use ```kexec``` to reboot your kernel without going through the BIOS:
-    ```
-    kexec -l /path/to/kernel --initrd /path/to/initrd --reuse-cmdline --append tsc=reliable
-    kexec -e
-    ```
+```
+kexec -l /path/to/kernel --initrd /path/to/initrd --reuse-cmdline --append tsc=reliable
+kexec -e
+```
     (as root)
     
